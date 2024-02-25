@@ -1,7 +1,10 @@
-import { greetUser } from '$utils/greet';
+import gsap from 'gsap';
+import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
+
+import { pages } from './pages';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+  gsap.registerPlugin(MorphSVGPlugin);
+  pages();
 });

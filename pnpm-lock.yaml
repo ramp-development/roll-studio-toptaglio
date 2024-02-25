@@ -1,13 +1,15 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@finsweet/ts-utils':
     specifier: ^0.40.0
     version: 0.40.0
+  gsap:
+    specifier: file:gsap-bonus.tgz
+    version: file:gsap-bonus.tgz
+  gsap-trial:
+    specifier: ^3.12.5
+    version: 3.12.5
 
 devDependencies:
   '@changesets/changelog-git':
@@ -1726,6 +1728,10 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
+  /gsap-trial@3.12.5:
+    resolution: {integrity: sha512-Mdq2sLBq6rt9qje/MoF/hRa/xKfvKOUdllPouU2Fhz1K6mpCk0SOGBDhxCrOrJXZ4O7YFFRFVADKIJVeHdKA8A==}
+    dev: false
+
   /hard-rejection@2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==}
     engines: {node: '>=6'}
@@ -3163,3 +3169,13 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  file:gsap-bonus.tgz:
+    resolution: {integrity: sha512-CVBX/43jc5sUqDXSsrNSj/o8n4+H7oSX2CM9ktuf4QS1QKcXoGsSdqZnvAdgzUFfIKyvAPBI5o5WEd7r1fxXZg==, tarball: file:gsap-bonus.tgz}
+    name: gsap
+    version: 3.11.5
+    dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
