@@ -4,8 +4,6 @@ import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
 import { queryElement } from '$utils/queryElement';
 
 export const home = () => {
-  console.log('home');
-
   const attr = 'data-hero';
   const path = queryElement<SVGPathElement>(`[${attr}="path"]`);
   const text1 = queryElement<HTMLDivElement>(`[${attr}="text1"]`);
