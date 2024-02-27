@@ -6,6 +6,9 @@ export const pages = () => {
     case '/':
       home();
       break;
+    case '/en':
+      home();
+      break;
     default:
       break;
   }
